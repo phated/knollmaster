@@ -6,8 +6,8 @@ define([
 
   return function(ctx){
     ctx.drawImage(bg1, 0, 0, this.width, this.height);
-    for(var key in this.entities){
-      var entity = this.entities[key];
+    for(var key in this.state){
+      var entity = this.state[key];
       entity.draw(ctx);
     }
   };
